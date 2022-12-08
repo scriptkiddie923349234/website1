@@ -1,0 +1,457 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.Hero{
+    background-image: url(/images/intro.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 1%;
+    padding-right: 5%;
+}
+.buttons ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 10px;
+}
+.buttons ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    
+}
+.loginButton{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+   
+    font-weight: bolder;
+
+}
+
+.loginButton a{
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style-type: none;
+    color: black;
+}
+.loginButton:hover{
+   background-color: #f44926;
+    transition: 0;
+}
+.buttons ul li a:hover{
+
+    color: #f44926;
+    transition: .8s;
+}
+.buttons h1{
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 120px;
+    margin-right: 15rem;
+    color: white;
+    cursor: pointer;
+}
+
+.Content{
+    margin-top: 250px; 
+    color: black;
+    
+}
+.Content h2{
+   font-size: 100px;
+}
+.btn{
+    margin-left: 300px;
+    font-size: 30px;
+ background: transparent;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 5%;
+    text-decoration: none;
+
+}
+.btn:hover{
+    color: black;
+    transition: .8s;
+}
+
+.Villain{
+    padding-top: 1px;
+    background-image: url(/images/2ndintro.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+   
+}
+.background{
+    background-image: url(/images/2ndintro.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.info{
+    float: right;
+    text-align: left;
+    margin-top: 15rem;
+    margin-right: 40rem;
+    color: #c2dbff;
+
+}
+
+.info h5{
+    font-size: 100px;
+    color: white;
+    
+}
+.info p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+.new{
+
+   
+}
+.jekok{
+    background-image: url(/images/aaa12.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.image{
+    box-shadow: 0 4px 8px 0;
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 10%;
+    text-align: center;
+    overflow: auto;
+    float: right;
+    cursor: pointer;
+   margin: 57px;
+    
+}
+
+.image img{
+    
+    display: center;
+    border-radius: 10%;
+   width: 45%;
+  
+   
+ }
+ .mess{
+    margin-top: 10rem;
+    text-align: center;
+ }
+ .image h5{
+    margin-top: 15x;
+ }
+ .href{
+    background-color: aqua;
+ }
+ 
+ .position{
+    float: left;
+    padding-left: 50%;
+  
+ }
+ .pictures img{
+    width: 30%;
+    height: 30vh;
+    border: 1px solid black;
+    box-shadow: 3px 5px 9px 9px;
+    box-sizing: border-box;
+    
+ }
+ .hoax{
+    float: right;
+   text-align: center;
+   padding-right: 25%;
+   padding-top: 5%;
+   
+}
+.hoax .none{
+    font-size: 50px;
+    margin-bottom: 10px;
+   
+    
+
+}
+.hoax button{
+    border: 1px solid black;
+    background-color: black;
+    border-width: 15px;
+    border-radius: 10%;
+    margin-top: 10px;
+    
+    
+
+}
+.hoax button a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+
+    
+
+}
+.btnToken{
+margin-top: 25rem;
+  margin-left: 15rem;
+display: center;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 25px;
+font-weight: bolder;
+border-radius: 4%
+;
+
+border-color: transparent;
+  color:  black;
+  background-image: -webkit-linear-gradient(45deg, #f44926 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #f44926 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+
+  
+
+}
+.btnToken a{
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style-type: none;
+    color: black;
+    
+}
+.btnToken:hover{
+    background-position: 0;
+  
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-family: sans-serif;
+    background-color: #f1f1f1; 
+    
+}
+
+body {
+  background: #111;
+  
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+ 
+    font-family: 'Josefin Sans', sans-serif;
+  font-size:3em;
+  font-weight: bolder;
+  text-align:center;
+  height:0px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+ 
+  margin-bottom: 100rem;
+  
+  
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+ 
+}
+.yawa{
+   
+    float: right;
+    text-align: left;
+    margin-top: 15rem;
+    margin-right: 40rem;
+    color: #c2dbff;
+   
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .heading__title {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+  background-image: url(/images/spirit.jpg);
+  }
+  
+  .card-2 {
+    background-image: url(/images/ad.jpg);
+  }
+  
+  .card-3 {
+  background-image: url(/images/micracle.jpg);
+  }
+  
+  .card-4 {
+   background-image: url(/images/a1.jpg);
+  }
+  
+  .card-5 {
+  background-image: url(/images/ame.jpg);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  .hax{
+    background-image: url(/images/aaa.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 150vh;
+  }
+  
