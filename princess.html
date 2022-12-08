@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,400;0,700;1,100;1,900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4928a7440c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="princess.css">  
+  
+  
+  <title>Shop</title>
+</head>
+<body>
+  
+  <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+  <div class="Hero">
+  <script>
+    // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Galaxy.', 'Galaxy', 'Galaxy.'], 'text',['#FFFFFF','#FFFFFF','#FFFFFF']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#f44926'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+  </script> 
+    
+    <div class="buttons">
+      
+      <div class="container">
+        <div class="text">
+         
+          
+        </div>
+        
+      </div>
+       
+       <ul>
+       
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Watch</a></li>
+        <button class="loginButton"><a href="LoginForm.html">Login</a></button>
+      </ul>
+    </div>
+    <button class="btnToken"><a href="buytoken.html">Buy Token</a></button> 
+    <div class="Content">
+     
+
+    </div>
+    
+  </div>
+  <div class="Villain">
+    <div class="background">
+    <div class="info">
+      <h5>About us !</h5>
+      <p>We are a legitmate online token sellers!</p>
+
+      
+    
+    </div> 
+    </div>
+    
+    <div class="hax">
+    <div class="main-container">
+      <div class="heading">
+        <h1 class="heading__title" style="color: white;">News</h1>
+        <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">By: Galaxy Gamers</a></p>
+      </div>
+      <div class="cards">
+        <div class="card card-1">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Team Spirit bids farewell to TORONTOTOKYO</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now <i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+        <div class="card card-2">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Superstar European AD carry reportedly sued by French esports agency for breach o</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now <i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+        <div class="card card-3">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Micrale Takes a break from competitive dota</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now <i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+        <div class="card card-4">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Panda CEO removed after mass roster walkout following Smash Bros eSports allegations | VGC</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now <i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+        <div class="card card-5">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Ame Takes A Break From Competitive Dota 2</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now <i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+        <div class="card card-1">
+          <div class="card__icon"><i class="fas fa-bolt"></i></div>
+          <p class="card__exit"><i class="fas fa-times"></i></p>
+          <h2 class="card__title">Superstar European AD carry reportedly sued by French esports agency for breach of contract.</h2>
+          <p class="card__apply">
+            <a class="card__link" href="#">See Now<i class="fas fa-arrow-right"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+    <div class="jekok">
+
+    
+   <div class="new">
+      <div class="image">
+        <img src="/images/seijuro.png" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Zed Konia</h3>
+          
+          <p style="font-size: 20px;color: white;">Leader</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white;">HIRE</button>
+         </div>
+      </div>
+     
+    </div>
+    <div class="new">
+ 
+      <div class="image">
+        <div class="marijuana">
+        <img src="/images/dabi.png" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Zyne Konia</h3>
+          
+          <p style="font-size: 20px;color: white;">Co-Leader</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white;">HIRE</button>
+         </div>
+      </div>
+     
+    </div>
+    
+    <div class="new">
+      <div class="image">
+        <img src="/images/ukn.jpg" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Ashkiba Konia</h3>
+          
+          <p style="font-size: 20px;color: white;">Editor</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white;">HIRE</button>
+         </div>
+          
+      </div>
+     
+    </div>
+    <div class="new">
+      <div class="image">
+        <img src="/images/Dalyns (@DMtiann).jpg" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Debu Konia</h3>
+          
+          <p style="font-size: 20px;color: white;">Maintenance</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white;">HIRE</button>
+         </div>
+          
+      </div>
+     
+    </div>
+    <div class="new">
+      <div class="image">
+        <img src="/images/download (1).jpg" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Koala Konia</h3>
+          
+          <p style="font-size: 20px;color: white;">Personal IT</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white;">HIRE</button>
+         </div>
+          
+      </div>
+     
+    </div>
+   
+     
+    </div>
+    <div class="new">
+      <div class="image">
+        <img src="/images/animiconz.jpg" alt=""  width="100%" style="border-radius: 50%;">
+         <div class="cops">
+          <h3 style="font-size: 30px;color: white;"> Deku Konia</h3>
+          
+          <p style="font-size: 20px; color: white;" >Secretary</p>
+         
+         
+          <button style="width: 50%; border-radius: 10%; background-color: #f44926; color: white; ">HIRE</button>
+         </div>
+          
+        </div>
+
+ 
+
+    
+ 
+      
+
+</html>
